@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 import { GaugeModule } from 'angular-gauge';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -17,6 +18,7 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
     BrowserModule, 
     FormsModule,
     BrowserModule,
+    AppRoutingModule,
     GaugeModule.forRoot(),
     HttpClientModule,
     FormsModule,
