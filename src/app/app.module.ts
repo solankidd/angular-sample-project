@@ -11,6 +11,7 @@ import { MatSelectModule } from '@angular/material/select';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
   imports:      [ 
@@ -25,7 +26,11 @@ import { HelloComponent } from './hello.component';
     MatTabsModule,
     MatIconModule,
   ],
-  declarations: [ AppComponent, HelloComponent ],
+  declarations: [ 
+    AppComponent, 
+    HelloComponent,
+    SearchBarComponent 
+  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
