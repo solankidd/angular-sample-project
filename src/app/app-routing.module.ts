@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path:'',
     component: HomeComponent
+  },
+  {
+    path: 'search/:game-search',
+    component: HomeComponent
   }
 ]
 
