@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Game } from '../../models';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public sort: string;
-  constructor() { }
+  public games: Game[]
+  constructor(
+    private api: ApiService,
+  ) { }
 
   ngOnInit() {
   }
