@@ -10,7 +10,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
@@ -28,7 +27,6 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
   ],
   declarations: [ 
     AppComponent, 
-    HelloComponent,
     SearchBarComponent 
   ],
   bootstrap:    [ AppComponent ]
