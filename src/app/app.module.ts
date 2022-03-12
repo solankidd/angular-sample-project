@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { GaugeModule } from 'angular-gauge';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -20,6 +21,7 @@ import { HomeComponent } from './components/home/home.component';
     FormsModule,
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     GaugeModule.forRoot(),
     HttpClientModule,
     FormsModule,
