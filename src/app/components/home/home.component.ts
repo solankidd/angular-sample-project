@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Game } from '../../models';
+import { ActivatedRoute, Params } from '@angular/router';
+import { APIResponse, Game } from '../../models';
 import { ApiService } from '../../services/api.service';
 
 @Component({
@@ -12,12 +13,23 @@ export class HomeComponent implements OnInit {
   public games: Game[]
   constructor(
     private api: ApiService,
+    private activatedRoute: ActivatedRoute
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.activatedRoute.params.subscribe((params: Params)=>{
+      if(params['game-search']){
+        this.searchGames('metacrit', params['game-search'])
+      }
+    })
   }
 
-  searchGames(sort) {
+  searchGames(sort:string, search?:string): void {
+    this.api
+    .getGameList(sort, search)
+    .subscribe((gameList: APIResponse<Game>)=>{
+      console.log(gameList)
+    })
 
   }
 
