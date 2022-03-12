@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
+import { HttpErrorInterceptor } from './interceptors/http-errors.interceptor';
 
 @NgModule({
   imports:      [ 
@@ -44,7 +45,7 @@ import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor'
     },
     {
       provide: HTTP_INTERCEPTORS,
-      useClass: HttpHeadersInterceptor,
+      useClass: HttpErrorInterceptor,
       multi: true
     }
   ],
