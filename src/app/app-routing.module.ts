@@ -6,7 +6,7 @@ import { CheckServiceComponent } from './check-service/check-service/check-servi
 const routes: Routes = [
   {
     path:'',
-    component: HomeComponent
+    component: CheckServiceComponent
   },
   {
     path: 'search/:game-search',
