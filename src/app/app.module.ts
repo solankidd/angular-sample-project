@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { CheckServiceModule } from './check-service/check-service.module';
+import { CheckService2Module } from './check-service2/check-service2.module';
 
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
@@ -34,7 +35,8 @@ import { ApiService } from './services/api.service';
     MatSelectModule,
     MatTabsModule,
     MatIconModule,
-    CheckServiceModule
+    CheckServiceModule,
+    CheckService2Module
   ],
   declarations: [ 
     AppComponent, 
