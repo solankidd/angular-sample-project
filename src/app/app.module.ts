@@ -10,6 +10,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { CheckServiceModule } from './check-service/check-service.module';
 
 import { AppComponent } from './app.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
@@ -31,6 +32,7 @@ import { HttpErrorInterceptor } from './interceptors/http-errors.interceptor';
     MatSelectModule,
     MatTabsModule,
     MatIconModule,
+    CheckServiceModule
   ],
   declarations: [ 
     AppComponent, 

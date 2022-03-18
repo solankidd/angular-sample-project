@@ -7,9 +7,12 @@ import { APIResponse, Game } from '../models';
 @Injectable({
   providedIn: 'root'
 })
+// @Injectable()
 export class ApiService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    console.log('instance created')
+   }
 
   getGameList(ordering: string, search?: string): Observable<APIResponse<Game>> {
     let params = new HttpParams().set('ordering', ordering);
