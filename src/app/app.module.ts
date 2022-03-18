@@ -18,6 +18,8 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpHeadersInterceptor } from './interceptors/http-headers.interceptor';
 import { HttpErrorInterceptor } from './interceptors/http-errors.interceptor';
 
+import { ApiService } from './services/api.service';
+
 @NgModule({
   imports:      [ 
     BrowserModule, 
@@ -49,7 +51,8 @@ import { HttpErrorInterceptor } from './interceptors/http-errors.interceptor';
       provide: HTTP_INTERCEPTORS,
       useClass: HttpErrorInterceptor,
       multi: true
-    }
+    },
+    ApiService
   ],
   bootstrap:    [ AppComponent ]
 })

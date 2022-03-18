@@ -13,7 +13,7 @@ import { AppRoutingModule } from '../app-routing.module';
     CheckServiceComponent
   ],
   providers: [
-    ApiService
+   ApiService
   ]
 })
 export class CheckServiceModule { }

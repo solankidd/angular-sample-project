@@ -4,10 +4,10 @@ import { Observable } from 'rxjs';
 import { environment as env } from '../../environments/environment';
 import { APIResponse, Game } from '../models';
 
-@Injectable({
-  providedIn: 'root'
-})
-// @Injectable()
+// @Injectable({
+//   providedIn: 'root'
+// })
+@Injectable()
 export class ApiService {
 
   constructor(private http: HttpClient) {
