@@ -4,7 +4,8 @@ import { ApiService } from '../../services/api.service';
 @Component({
   selector: 'app-check-service',
   templateUrl: './check-service.component.html',
-  styleUrls: ['./check-service.component.css']
+  styleUrls: ['./check-service.component.css'],
+  providers: [ApiService]
 })
 export class CheckServiceComponent implements OnInit { 
 
