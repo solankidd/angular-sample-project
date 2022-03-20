@@ -1,20 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
+import { ModuleTestService } from '../../services/module-test.service';
 
 @Component({
   selector: 'app-check-service',
   templateUrl: './check2.component.html',
   styleUrls: ['./check2.component.css'],
-  // providers: [ApiService]
+  // providers: [ModuleTestService]
 })
 export class Check2Component implements OnInit {  
 
   constructor(
-    private api: ApiService
+    private api: ApiService,
+    private mt: ModuleTestService
   ) { }
 
   ngOnInit() {
-    console.log('Test')
+    console.log('check2');
+    this.mt.checkMethod()
   }
 
 }
